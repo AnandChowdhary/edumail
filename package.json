@@ -11,7 +11,7 @@
     "test": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "test-without-reporting": "jest --coverage",
     "test-without-coverage": "jest",
-    "postinstall": "mkdir -p dist && cd dist && git clone https://github.com/JetBrains/swot --depth 1 && cp swot ../swot"
+    "postinstall": "mkdir -p dist && cd dist && git clone https://github.com/JetBrains/swot --depth 1 && cp -r swot ../swot"
   },
   "devDependencies": {
     "@types/fs-extra": "^7.0.0",
