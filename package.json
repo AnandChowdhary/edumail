@@ -1,6 +1,6 @@
 {
   "name": "edumail",
-  "version": "1.0.0",
+  "version": "0.9.0",
   "main": "index.js",
   "repository": "git@github.com:AnandChowdhary/edumail.git",
   "author": "Anand Chowdhary <mail@anandchowdhary.com>",
@@ -11,7 +11,7 @@
     "test": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "test-without-reporting": "jest --coverage",
     "test-without-coverage": "jest",
-    "postinstall": "cd dist && git clone https://github.com/JetBrains/swot --depth 1"
+    "postinstall": "mkdir -p dist && cd dist && git clone https://github.com/JetBrains/swot --depth 1"
   },
   "devDependencies": {
     "@types/fs-extra": "^7.0.0",
