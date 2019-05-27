@@ -4,9 +4,9 @@
 [![Coverage](https://img.shields.io/coveralls/github/AnandChowdhary/edumail.svg)](https://coveralls.io/github/AnandChowdhary/edumail)
 [![GitHub](https://img.shields.io/github/license/anandchowdhary/edumail.svg)](https://github.com/AnandChowdhary/edumail/blob/master/LICENSE)
 ![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/AnandChowdhary/edumail.svg)
-[![Minzipped size](https://img.shields.io/bundlephobia/minzip/edumail-js.svg)](https://www.npmjs.com/package/edumail-js)
-[![NPM version](https://img.shields.io/npm/v/edumail-js.svg)](https://www.npmjs.com/package/edumail-js)
-[![Types](https://img.shields.io/npm/types/edumail-js.svg)](https://www.npmjs.com/package/edumail-js)
+[![Minzipped size](https://img.shields.io/bundlephobia/minzip/edumail.svg)](https://www.npmjs.com/package/edumail)
+[![NPM version](https://img.shields.io/npm/v/edumail.svg)](https://www.npmjs.com/package/edumail)
+[![Types](https://img.shields.io/npm/types/edumail.svg)](https://www.npmjs.com/package/edumail)
 
 Edumail helps you identify educational emails for academic discounts.
 
