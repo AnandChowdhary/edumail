@@ -1,6 +1,7 @@
 # 🎓 Edumail
 
 [![Travis CI](https://img.shields.io/travis/AnandChowdhary/edumail.svg)](https://travis-ci.org/AnandChowdhary/edumail)
+[![Coverage](https://img.shields.io/coveralls/github/AnandChowdhary/edumail.svg)](https://coveralls.io/github/AnandChowdhary/edumail)
 [![GitHub](https://img.shields.io/github/license/anandchowdhary/edumail.svg)](https://github.com/AnandChowdhary/edumail/blob/master/LICENSE)
 ![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/AnandChowdhary/edumail.svg)
 [![Minzipped size](https://img.shields.io/bundlephobia/minzip/edumail-js.svg)](https://www.npmjs.com/package/edumail-js)
