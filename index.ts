@@ -1,5 +1,5 @@
 import { join } from "path";
-import { readFile, remove } from "fs-extra";
+import { readFile } from "fs-extra";
 import NodeCache from "node-cache";
 
 const domainsDirectory = join(__dirname, "swot", "lib", "domains");
@@ -12,7 +12,13 @@ const cachedReadFile = async (file: string) => {
   return (await readFile(file)).toString();
 };
 
+const validateEmail = (email: string) => {
+  if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/))
+    throw new Error("invalid email");
+}
+
 export const isBlackListed = async (email: string) => {
+  validateEmail(email);
   const blacklist = (await cachedReadFile(
     join(domainsDirectory, "blacklist.txt")
   )).split("\n");
@@ -25,6 +31,7 @@ export const isBlackListed = async (email: string) => {
 };
 
 export const isEducationalDomain = async (email: string) => {
+  validateEmail(email);
   const educationalDomains = (await cachedReadFile(
     join(domainsDirectory, "tlds.txt")
   )).split("\n");
@@ -52,6 +59,7 @@ const removeAfter = (array: string[], val: string) => {
 };
 
 export const isEducational = async (email: string) => {
+  validateEmail(email);
   if ((await isEducationalDomain(email)) && !(await isBlackListed(email)))
     return true;
   const domain = email
