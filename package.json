@@ -1,6 +1,6 @@
 {
   "name": "edumail",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "main": "index.js",
   "repository": "git@github.com:AnandChowdhary/edumail.git",
   "author": "Anand Chowdhary <mail@anandchowdhary.com>",
