@@ -2,7 +2,7 @@ import { join } from "path";
 import { readFile } from "fs-extra";
 import NodeCache from "node-cache";
 
-const domainsDirectory = join(__dirname, "swot", "lib", "domains");
+const domainsDirectory = join(__dirname, "domains");
 
 const cache = new NodeCache();
 const cachedReadFile = async (file: string) => {

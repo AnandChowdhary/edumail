@@ -13,10 +13,12 @@ echo "Updated files!"
 
 # Update project and NPM
 cd edumail
-npm version patch
+npm version patch -m ":rocket: Bump package version"
 git add .
 git commit -m ":card_file_box: Update data from JetBrains/swot"
 git push origin master
+yarn
+yarn build
 npm publish
 echo "Published to GitHub and NPM"
 

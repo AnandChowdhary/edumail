@@ -1,17 +1,20 @@
 {
   "name": "edumail",
   "version": "0.9.1",
-  "main": "index.js",
   "repository": "git@github.com:AnandChowdhary/edumail.git",
   "author": "Anand Chowdhary <mail@anandchowdhary.com>",
   "license": "MIT",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && cp -r domains dist/domains",
     "build-run": "yarn build && node dist/index.js",
     "test": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "test-without-reporting": "jest --coverage",
-    "test-without-coverage": "jest",
-    "postinstall": "mkdir -p dist && cd dist && git clone https://github.com/JetBrains/swot --depth 1 && cp -r swot ../swot"
+    "test-without-coverage": "jest"
   },
   "devDependencies": {
     "@types/fs-extra": "^7.0.0",
