@@ -1,10 +1,10 @@
 # Get the JetBrains/swot repo
 cd ~/
 mkdir temp-update && cd temp-update
-git clone git@github.com:JetBrains/swot
+git clone --depth=1 git@github.com:JetBrains/swot
 
 # Get the edumail repo
-git clone git@github.com:AnandChowdhary/edumail
+git clone --depth=1 git@github.com:AnandChowdhary/edumail
 
 # Copy data
 rm -r edumail/domains
