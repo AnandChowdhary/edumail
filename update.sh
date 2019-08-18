@@ -1,5 +1,6 @@
 # Get the JetBrains/swot repo
 cd ~/
+rm -rf temp-update
 mkdir temp-update && cd temp-update
 git clone --depth=1 git@github.com:JetBrains/swot
 
@@ -7,7 +8,7 @@ git clone --depth=1 git@github.com:JetBrains/swot
 git clone --depth=1 git@github.com:AnandChowdhary/edumail
 
 # Copy data
-rm -r edumail/domains
+rm -rf edumail/domains
 mv swot/lib/domains edumail
 echo "Updated files!"
 
