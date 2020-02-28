@@ -23,7 +23,7 @@
     "coveralls": "^3.0.9",
     "jest": "^25.1.0",
     "ts-jest": "^25.2.1",
-    "typescript": "^3.8.2"
+    "typescript": "^3.8.3"
   },
   "dependencies": {
     "fs-extra": "^8.1.0",
