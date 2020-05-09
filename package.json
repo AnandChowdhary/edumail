@@ -22,7 +22,7 @@
     "@types/node": "^13.13.5",
     "coveralls": "^3.1.0",
     "jest": "^25.5.4",
-    "ts-jest": "^25.5.0",
+    "ts-jest": "^25.5.1",
     "typescript": "^3.8.3"
   },
   "dependencies": {
