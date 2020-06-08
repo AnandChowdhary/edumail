@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "fs-extra": "^9.0.1",
-    "node-cache": "^5.1.0"
+    "node-cache": "^5.1.1"
   },
   "jest": {
     "roots": [
